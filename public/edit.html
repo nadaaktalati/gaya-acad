@@ -1,0 +1,1628 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashbord</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+        }, 1000);
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div class="" id="loader">
+      <img
+        src="./images/Dual Ball@1x-1.0s-209px-209px.gif"
+        width="70px"
+        alt=""
+      />
+    </div>
+
+    <div class="main-wrapper">
+      <header
+        class="header d-flex justify-content-between align-items-center py-2 px-3 flex-nowrap fixed-top"
+      >
+        <!-- القسم الأيمن -->
+        <div class="d-flex align-items-center gap-2 flex-nowrap">
+         
+          <a href="#">
+            <i class="fa-solid fa-chart-bar fa-lg" id="sidebar-toggle"></i>
+          </a>
+    
+          <a class="text-decoration-none d-none d-sm-inline logo" href="/">
+            لوحة تحكم منصة غاية
+          </a>
+
+          <a
+            href="#"
+            class="d-lg-none"
+            id="search-toggle "
+            style="color: #032263"
+          >
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </a>
+
+          <form
+            action=""
+            class="d-none d-lg-flex flex-grow-1 my-0"
+            id="search-form"
+          >
+            <input
+              type="text "
+              placeholder="اكتب كلمة البحث"
+              class="form-control w-100 ms-4"
+            />
+          </form>
+        </div>
+
+      
+        <div class="d-flex align-items-center gap-2 flex-nowrap">
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-calendar-days fa-lg"></i
+          ></a>
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-comment-dots fa-lg"></i
+          ></a>
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-bell fa-lg"></i
+          ></a>
+
+          <div
+            class="massages-containe position-relative"
+            id="massages-containe"
+            style="color: #032263"
+          >
+            <i class="fa-regular fa-envelope fa-lg">
+              <span
+                class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                style="font-size: 10px"
+              >
+                16
+              </span></i
+            >
+            <ul class="massages-area position-absolute" id="massages-area">
+              <div class="massages-header">
+                <h6 style="font-size: 13px" class="alert alert-primary fw-bold">
+                  أحدث الرسائل
+                </h6>
+              </div>
+              <li>
+                <!-- 1 -->
+
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 6.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      مريم ياسر
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        1
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 2.png"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      خالد عمر
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        4
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 5.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      ريم صالح
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 4.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      هاجر علي
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        2
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <h6
+                class="fw-bold text-center text-danger"
+                style="font-size: 11px"
+              >
+                كافة الرسائل
+                <i class="fa-solid fa-arrow-left mt-1"></i>
+              </h6>
+            </ul>
+          </div>
+
+          <div class="avatar">
+            <img
+              src="./images/profile new.png"
+              alt="avatar"
+              class="rounded-circle"
+              width="40"
+              height="40"
+            />
+          </div>
+          <a
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            class="text-primary"
+          >
+            <i class="fa-solid fa-bars-staggered fa-lg active-users"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <div class="profile">
+          <img width="55rem" src="./images/profile new.png" alt="profile" />
+          <h1 class="fw-bold fs-4 mt-3">ندى أكتلاتي</h1>
+        </div>
+
+        <ul class="ul-sidebar" style="list-style: none">
+          <li class="mb-2 active">
+            <i class="fa-solid fa-house fs-5"></i>
+            <a class="ms-1" href="./İndex.html"> الصفحة الرئيسية </a>
+          </li>
+          <li class="mb-2 item">
+            <i class="fa-solid fa-users"></i>
+            <a class="ms-1" href="#"> إدارة المستخدمين</a>
+            <ul class="submenu">
+              <li>
+                <a href="./student.html">الطلاب</a>
+              </li>
+              <li><a href="./Teachers.html"> إدارة المعلمين </a></li>
+              <li>
+                <a href="./Supervisors.html"> المشرفون</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-layer-group"></i>
+            <a class="ms-1" href="#"> إدارة المحتوى</a>
+            <ul class="submenu">
+              <li><a href="./Courses.html">الدورات / المواد</a></li>
+
+              <li><a href="./Episodes.html">الحلقات</a></li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-list-check"></i>
+            <a class="ms-1" href="#"> التسجيل والمتابعة</a>
+            <ul class="submenu">
+              <li><a href="student.html">سجل الطلاب</a></li>
+
+              <li><a href="./Tests.html">التقييمات والاختبارات</a></li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-tools"></i>
+            <a class="ms-1" href="#"> الإعدادات</a>
+            <ul class="submenu">
+              <li><a href="./edit.html"> إعدادات المنصة</a></li>
+              <li><a href="./rol.html"> الصلاحيات والأدوار</a></li>
+              <li><a href="./profil.html"> الملف الشخصي</a></li>
+              <li class="logout"><a href="">تسجيل الخروج</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- content -->
+
+      <!--card-1  -->
+      <div class="content" id="content">
+        <div class="container py-4" style="max-width: 1150px">
+          <!-- Header -->
+          <div class="glass soft p-3 p-md-4 mb-4">
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3"
+            >
+              <div>
+                <div class="fw-bold fs-4 text-light">
+                  <i class="fa-solid fa-gear me-2"></i> إعدادات المنصة
+                </div>
+                <div class="text-light">
+                  تخصيص المنصة وإدارة المستخدمين والتواصل والاختبارات والأمان
+                  بواجهة بسيطة.
+                </div>
+              </div>
+              <div class="d-flex gap-2 flex-wrap">
+                <button
+                  class="btn btn-ghost text-light"
+                  style="background: var(--navy); border-color: var(--navy)"
+                >
+                  <i class="fa-solid fa-floppy-disk me-1"></i> حفظ التغييرات
+                </button>
+                <button class="btn btn-ghost soft">
+                  <i class="fa-solid fa-rotate-left me-1"></i> إعادة ضبط
+                </button>
+              </div>
+            </div>
+
+            <div class="note soft p-3 mt-3">
+              <div class="d-flex align-items-start gap-3">
+                <div class="icon-box">
+                  <i class="fa-solid fa-circle-info text-light"></i>
+                </div>
+                <div class="text-light">
+                  <div class="fw-bold">ملاحظة</div>
+                  <div class="muted text-light">
+                    قم بحفظ التغييرات بعد إنهاء التعديل في كل الأقسام لتطبيقها
+                    على المنصة.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container py-4" style="max-width: 1150px">
+            <div class="glass p-3 p-md-4">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3"
+              >
+                <ul class="nav gap-3 w-100" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-ghost active"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tab-general"
+                      type="button"
+                      role="tab"
+                    >
+                      عام
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-ghost-card"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tab-users"
+                      type="button"
+                      role="tab"
+                    >
+                      المستخدمين
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-ghost-card"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tab-learning"
+                      type="button"
+                      role="tab"
+                    >
+                      التعليم
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-ghost-card"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tab-exams"
+                      type="button"
+                      role="tab"
+                    >
+                      الاختبارات
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-ghost-card"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tab-comms"
+                      type="button"
+                      role="tab"
+                    >
+                      التواصل
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-ghost-card"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tab-security"
+                      type="button"
+                      role="tab"
+                    >
+                      الأمان
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-ghost-card"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tab-ui"
+                      type="button"
+                      role="tab"
+                    >
+                      الواجهة
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-ghost-card"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tab-advanced"
+                      type="button"
+                      role="tab"
+                    >
+                      متقدم
+                    </button>
+                  </li>
+                </ul>
+
+                <span class="badge text-bg-secondary px-3 py-2 settings-badge">
+                  لوحة إعدادات كاملة
+                </span>
+              </div>
+
+              <hr class="divider" />
+
+              <div class="tab-content mt-3">
+                <!-- GENERAL -->
+                <div
+                  class="tab-pane fade show active"
+                  id="tab-general"
+                  role="tabpanel"
+                >
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-7">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-building me-2"></i> معلومات
+                          المنصة
+                        </div>
+
+                        <div class="row g-3">
+                          <div class="col-12 col-md-6">
+                            <label class="form-label muted small"
+                              >اسم المنصة</label
+                            >
+                            <input
+                              class="form-control soft"
+                              placeholder="مثال: أكاديمية القرآن والعربية"
+                            />
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label class="form-label muted small"
+                              >البريد الرسمي</label
+                            >
+                            <input
+                              class="form-control soft"
+                              placeholder="info@platform.com"
+                            />
+                          </div>
+
+                          <div class="col-12 col-md-6">
+                            <label class="form-label muted small"
+                              >رقم التواصل</label
+                            >
+                            <input
+                              class="form-control soft"
+                              placeholder="+90 5xx xxx xx xx"
+                            />
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label class="form-label muted small"
+                              >عنوان المؤسسة</label
+                            >
+                            <input
+                              class="form-control soft"
+                              placeholder="إسطنبول - تركيا"
+                            />
+                          </div>
+
+                          <div class="col-12">
+                            <label class="form-label muted small"
+                              >وصف مختصر</label
+                            >
+                            <textarea
+                              class="form-control soft"
+                              rows="3"
+                              placeholder="منصة تعليمية لتعليم القرآن واللغة العربية ومواد الشريعة..."
+                            ></textarea>
+                          </div>
+
+                          <div class="col-12 col-md-6">
+                            <label class="form-label muted small"
+                              >لغة المنصة</label
+                            >
+                            <select class="form-select soft">
+                              <option selected>العربية</option>
+                              <option>English</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label class="form-label muted small"
+                              >المنطقة الزمنية</label
+                            >
+                            <select class="form-select soft">
+                              <option selected>UTC+03:00 (Türkiye)</option>
+                              <option>UTC+02:00</option>
+                              <option>UTC+00:00</option>
+                            </select>
+                          </div>
+
+                          <div class="col-12 col-md-6">
+                            <label class="form-label muted small"
+                              >تنسيق التاريخ</label
+                            >
+                            <select class="form-select soft">
+                              <option selected>DD/MM/YYYY</option>
+                              <option>MM/DD/YYYY</option>
+                              <option>YYYY-MM-DD</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label class="form-label muted small"
+                              >العملة (اختياري)</label
+                            >
+                            <select class="form-select soft">
+                              <option selected>TRY</option>
+                              <option>USD</option>
+                              <option>SAR</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-5">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-image me-2"></i> الهوية (Logo)
+                        </div>
+
+                        <div class="glass soft p-3 text-center">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              style="border-radius: 10px"
+                              width="100%"
+                              src="./images/logo.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+
+                        <hr class="divider my-3" />
+
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-toggle-on me-2"></i> تشغيل
+                          المنصة
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label muted"
+                            >تفعيل المنصة</label
+                          >
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label muted">
+                            وضع الصيانة (Maintenance)
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- USERS -->
+                <div class="tab-pane fade" id="tab-users" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-user-plus me-2"></i> التسجيل
+                          والتحقق
+                        </div>
+
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >السماح بالتسجيل الذاتي</label
+                          >
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >تفعيل التحقق عبر البريد</label
+                          >
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >تسجيل عبر رقم الهاتف</label
+                          >
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >موافقة الإدارة قبل تفعيل الحساب</label
+                          >
+                        </div>
+
+                        <hr class="divider my-3" />
+                        <label class="form-label muted small"
+                          >الدور الافتراضي عند التسجيل</label
+                        >
+                        <select class="form-select soft">
+                          <option selected>طالب</option>
+                          <option>ولي أمر</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-shield me-2"></i> الأدوار
+                          والصلاحيات
+                        </div>
+                        <div class="muted small mb-2">
+                          اختيار سريع للصلاحيات الأساسية:
+                        </div>
+
+                        <div class="glass soft p-3 mb-2">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div>
+                              <div class="fw-bold">المشرف</div>
+                              <div class="muted small">إدارة كاملة</div>
+                            </div>
+                            <span class="badge text-bg-success">مفعّل</span>
+                          </div>
+                        </div>
+
+                        <div class="glass soft p-3 mb-2">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div>
+                              <div class="fw-bold">المعلم</div>
+                              <div class="muted small">نشر محتوى + تصحيح</div>
+                            </div>
+                            <button class="btn btn-ghost btn-sm soft">
+                              تعديل
+                            </button>
+                          </div>
+                        </div>
+
+                        <div class="glass soft p-3">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div>
+                              <div class="fw-bold">ولي الأمر</div>
+                              <div class="muted small">متابعة التقدم فقط</div>
+                            </div>
+                            <button class="btn btn-ghost btn-sm soft">
+                              تعديل
+                            </button>
+                          </div>
+                        </div>
+
+                        <div class="note soft p-3 mt-3">
+                          <div class="fw-bold">اقتراح</div>
+                          <div class="muted small">
+                            خصص صلاحيات “إنشاء الاختبارات” للمعلم فقط أو للمشرف.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- LEARNING -->
+                <div class="tab-pane fade" id="tab-learning" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-book-open me-2"></i> الدورات
+                          والمواد
+                        </div>
+
+                        <label class="form-label muted small"
+                          >عدد الطلاب الأقصى في الدورة (اختياري)</label
+                        >
+                        <input
+                          class="form-control soft"
+                          placeholder="مثال: 30"
+                        />
+
+                        <div class="form-check form-switch mt-3 mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >السماح بتغيير المعلم للدورة</label
+                          >
+                        </div>
+
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >أرشفة الدورات المكتملة تلقائياً</label
+                          >
+                        </div>
+
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >إتاحة معاينة محتوى قبل التسجيل</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-video me-2"></i> الحصص المباشرة
+                        </div>
+
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >تفعيل الحصص المباشرة</label
+                          >
+                        </div>
+
+                        <label class="form-label muted small mt-2"
+                          >مدة الحصة الافتراضية (بالدقائق)</label
+                        >
+                        <input
+                          class="form-control soft"
+                          placeholder="مثال: 45"
+                        />
+
+                        <label class="form-label muted small mt-3"
+                          >عدد الطلاب الأقصى في الحصة</label
+                        >
+                        <input
+                          class="form-control soft"
+                          placeholder="مثال: 10"
+                        />
+
+                        <div class="note soft p-3 mt-3">
+                          <div class="fw-bold">نصيحة</div>
+                          <div class="muted small">
+                            حدد عدد طلاب قليل للحلقات القرآنية لضمان جودة
+                            المتابعة.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- EXAMS -->
+                <div class="tab-pane fade" id="tab-exams" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-clipboard-check me-2"></i>
+                          إعدادات الاختبارات
+                        </div>
+
+                        <label class="form-label muted small"
+                          >المحاولات الافتراضية</label
+                        >
+                        <select class="form-select soft">
+                          <option selected>محاولة واحدة</option>
+                          <option>محاولتين</option>
+                          <option>غير محدود</option>
+                        </select>
+
+                        <label class="form-label muted small mt-3"
+                          >إظهار النتيجة</label
+                        >
+                        <select class="form-select soft">
+                          <option selected>فوراً</option>
+                          <option>بعد الإغلاق</option>
+                          <option>بعد التصحيح</option>
+                        </select>
+
+                        <div class="form-check form-switch mt-3 mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >عشوائية ترتيب الأسئلة</label
+                          >
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >تفعيل المؤقت الزمني</label
+                          >
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >منع الرجوع للأسئلة السابقة</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-microphone-lines me-2"></i>
+                          تقييم التلاوة (Rubric)
+                        </div>
+
+                        <div class="muted small mb-2">
+                          نسب بسيطة للتصحيح (يمكن تعديلها):
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <span class="muted">المخارج</span
+                          ><span class="badge text-bg-secondary">30%</span>
+                        </div>
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <span class="muted">الأحكام</span
+                          ><span class="badge text-bg-secondary">40%</span>
+                        </div>
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2"
+                        >
+                          <span class="muted">الوقف والابتداء</span
+                          ><span class="badge text-bg-secondary">20%</span>
+                        </div>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <span class="muted">الطلاقة</span
+                          ><span class="badge text-bg-secondary">10%</span>
+                        </div>
+
+                        <button class="btn btn-ghost soft w-100 mt-3">
+                          <i class="fa-solid fa-pen me-1"></i> تعديل نسب الـ
+                          Rubric
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- COMMS -->
+                <div class="tab-pane fade" id="tab-comms" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-envelope me-2"></i> الرسائل
+                        </div>
+
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >تفعيل الرسائل بين الطلاب والمعلمين</label
+                          >
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >تفعيل رسائل أولياء الأمور</label
+                          >
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >السماح بإرفاق ملفات</label
+                          >
+                        </div>
+
+                        <hr class="divider my-3" />
+                        <label class="form-label muted small"
+                          >رسالة ترحيب تلقائية</label
+                        >
+                        <textarea
+                          class="form-control soft"
+                          rows="3"
+                          placeholder="مرحباً بك في منصتنا التعليمية..."
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-bell me-2"></i> الإشعارات
+                        </div>
+
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label"
+                            >إشعارات داخل المنصة</label
+                          >
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >إشعارات البريد الإلكتروني</label
+                          >
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >إشعارات SMS (اختياري)</label
+                          >
+                        </div>
+
+                        <hr class="divider my-3" />
+                        <label class="form-label muted small"
+                          >فلترة الإشعارات الافتراضية</label
+                        >
+                        <select class="form-select soft">
+                          <option selected>الكل</option>
+                          <option>الاختبارات فقط</option>
+                          <option>الدورات فقط</option>
+                          <option>الرسائل فقط</option>
+                          <option>النظام فقط</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SECURITY -->
+                <div class="tab-pane fade" id="tab-security" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-lock me-2"></i> حماية الحساب
+                        </div>
+
+                        <label class="form-label muted small"
+                          >عدد المحاولات الفاشلة قبل القفل</label
+                        >
+                        <select class="form-select soft">
+                          <option selected>5</option>
+                          <option>3</option>
+                          <option>10</option>
+                        </select>
+
+                        <div class="form-check form-switch mt-3 mb-2">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >تفعيل المصادقة الثنائية (2FA)</label
+                          >
+                        </div>
+
+                        <button class="btn btn-ghost soft w-100 mt-2">
+                          <i class="fa-solid fa-right-from-bracket me-1"></i>
+                          تسجيل الخروج من كل الأجهزة
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                      <div class="glass soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-clipboard-list me-2"></i> سجل
+                          النشاطات
+                        </div>
+                        <div class="muted small mb-2">
+                          عرض مختصر لأهم الأحداث (مثال):
+                        </div>
+
+                        <div class="glass soft p-3 mb-2">
+                          <div class="d-flex justify-content-between">
+                            <span>تسجيل دخول مشرف</span
+                            ><span class="muted small">اليوم</span>
+                          </div>
+                        </div>
+                        <div class="glass soft p-3 mb-2">
+                          <div class="d-flex justify-content-between">
+                            <span>تعديل إعدادات الاختبارات</span
+                            ><span class="muted small">أمس</span>
+                          </div>
+                        </div>
+                        <div class="glass soft p-3">
+                          <div class="d-flex justify-content-between">
+                            <span>رفع شعار جديد</span
+                            ><span class="muted small">منذ 5 أيام</span>
+                          </div>
+                        </div>
+
+                        <button
+                          class="btn btn-primary soft w-100 mt-3"
+                          style="
+                            background: var(--navy);
+                            border-color: var(--navy);
+                          "
+                        >
+                          عرض السجل الكامل
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- UI -->
+                <div class="tab-pane fade" id="tab-ui" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-palette me-2"></i> تخصيص الألوان
+                        </div>
+
+                        <label class="form-label muted small">لون الهوية</label>
+                        <select class="form-select soft">
+                          <option selected>أزرق داكن (Navy)</option>
+                          <option>بنفسجي</option>
+                          <option>أخضر</option>
+                          <option>رمادي</option>
+                        </select>
+
+                        <div class="form-check form-switch mt-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
+                          <label class="form-check-label">الوضع الداكن</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-house me-2"></i> الصفحة الرئيسية
+                        </div>
+
+                        <label class="form-label muted small"
+                          >محتوى الواجهة</label
+                        >
+                        <select class="form-select soft">
+                          <option selected>عرض الدورات المميزة</option>
+                          <option>عرض أحدث الحلقات</option>
+                          <option>عرض مختصر فقط</option>
+                        </select>
+
+                        <label class="form-label muted small mt-3"
+                          >نص الترحيب</label
+                        >
+                        <input
+                          class="form-control soft"
+                          placeholder="مرحباً بكم في منصتنا التعليمية"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ADVANCED -->
+                <div class="tab-pane fade" id="tab-advanced" role="tabpanel">
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                      <div class="btn-ghost-card soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-database me-2"></i> النسخ
+                          الاحتياطي
+                        </div>
+
+                        <div class="form-check form-switch mb-2">
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label"
+                            >نسخ احتياطي تلقائي أسبوعياً</label
+                          >
+                        </div>
+
+                        <button
+                          class="btn btn-primary soft w-100"
+                          style="
+                            background: var(--navy);
+                            border-color: var(--navy);
+                          "
+                        >
+                          إنشاء نسخة احتياطية الآن
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                      <div class="glass soft p-3">
+                        <div class="fw-bold mb-2">
+                          <i class="fa-solid fa-file-signature me-2"></i> صفحات
+                          قانونية
+                        </div>
+
+                        <label class="form-label muted small"
+                          >سياسة الخصوصية</label
+                        >
+                        <textarea
+                          class="form-control soft"
+                          rows="3"
+                          placeholder="اكتب سياسة الخصوصية..."
+                        ></textarea>
+
+                        <label class="form-label muted small mt-3"
+                          >شروط الاستخدام</label
+                        >
+                        <textarea
+                          class="form-control soft"
+                          rows="3"
+                          placeholder="اكتب شروط الاستخدام..."
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="divider mt-4" />
+              <div class="d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-ghost soft px-4">
+                  إلغاء
+                </button>
+
+                <button type="button" class="btn btn-ghost-card soft px-4">
+                  <i class="fa-solid fa-floppy-disk me-1"></i> حفظ التغييرات
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- users online  -->
+        <div
+          class="offcanvas offcanvas-end"
+          style="background-color: #cccccc; --bs-offcanvas-width: 270px"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+          </div>
+          <div class="offcanvas-body">
+            <!-- 1 -->
+            <div class="alert alert-success mt-3">كافة المستخدمين النشطون</div>
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 1.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  يوسف حسن
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 8.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  هبة الله ثابت
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 3.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  خالد أحمد
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 4.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  هاجر علي
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 2.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  خالد عمر
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 5.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  ريم صالح
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 6.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  مريم ياسر
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+
+        <footer class="site-footer">
+          <!-- Top -->
+          <div class="footer-top">
+            <div class="container">
+              <div class="row g-4">
+                <!-- About -->
+                <div class="col-md-4">
+                  <h5 class="footer-title">منصة غاية</h5>
+                  <p class="footer-desc">
+                    منصة تعليمية متخصصة في تعليم اللغة العربية والقرآن الكريم
+                    وتأهيل الكوادر التعليمية بأفضل الأساليب الحديثة.
+                  </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-2">
+                  <h5 class="footer-title">روابط سريعة</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">الدورات</a></li>
+                    <li><a href="#">المعلمين</a></li>
+                    <li><a href="#">التقارير</a></li>
+                    <li><a href="#">الدعم الفني</a></li>
+                  </ul>
+                </div>
+
+                <!-- Programs -->
+                <div class="col-md-3">
+                  <h5 class="footer-title">برامجنا</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">تعليم القرآن الكريم</a></li>
+                    <li><a href="#">اللغة العربية</a></li>
+                    <li><a href="#">إعداد المعلمين</a></li>
+                    <li><a href="#">الدورات المكثفة</a></li>
+                    <li><a href="#">برامج الأطفال</a></li>
+                  </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3">
+                  <h5 class="footer-title">تواصل معنا</h5>
+                  <ul class="footer-links">
+                    <li>📧 info@gaya.com</li>
+                    <li>📞 +90 555 123 4567</li>
+                    <li>📍 تركيا – إسطنبول</li>
+                  </ul>
+
+                  <div class="footer-social mt-3">
+                    <a href="#">🌐</a>
+                    <a href="#">📘</a>
+                    <a href="#">📺</a>
+                    <a href="#">💬</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom -->
+          <div class="footer-bottom">
+            <div
+              class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+            >
+              <div>© 2026 جميع الحقوق محفوظة — منصة غاية</div>
+
+              <div>تصميم وتطوير ❤️ فريق المنصة</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./javascript/charts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

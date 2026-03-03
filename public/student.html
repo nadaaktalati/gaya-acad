@@ -1,0 +1,1572 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashbord</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+        }, 1000);
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div class="" id="loader">
+      <img
+        src="./images/Dual Ball@1x-1.0s-209px-209px.gif"
+        width="70px"
+        alt=""
+      />
+    </div>
+
+    <div class="main-wrapper">
+      <header
+        class="header d-flex justify-content-between align-items-center py-2 px-3 flex-nowrap fixed-top"
+      >
+        <!-- القسم الأيمن -->
+        <div class="d-flex align-items-center gap-2 flex-nowrap">
+          <!-- أيقونة الشعار -->
+          <a href="#">
+            <i class="fa-solid fa-chart-bar fa-lg" id="sidebar-toggle"></i>
+          </a>
+          <!-- الشعار يختفي على الشاشات الصغيرة -->
+          <a class="text-decoration-none d-none d-sm-inline logo" href="/">
+            لوحة تحكم منصة غاية
+          </a>
+
+          <a
+            href="#"
+            class="d-lg-none"
+            id="search-toggle "
+            style="color: #032263"
+          >
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </a>
+
+          <form
+            action=""
+            class="d-none d-lg-flex flex-grow-1 my-0"
+            id="search-form"
+          >
+            <input
+              type="text "
+              placeholder="اكتب كلمة البحث"
+              class="form-control w-100 ms-4"
+            />
+          </form>
+        </div>
+
+        <!-- القسم الأيسر -->
+        <div class="d-flex align-items-center gap-2 flex-nowrap">
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-calendar-days fa-lg"></i
+          ></a>
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-comment-dots fa-lg"></i
+          ></a>
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-bell fa-lg"></i
+          ></a>
+
+          <div
+            class="massages-containe position-relative"
+            id="massages-containe"
+            style="color: #032263"
+          >
+            <i class="fa-regular fa-envelope fa-lg">
+              <span
+                class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                style="font-size: 10px"
+              >
+                16
+              </span></i
+            >
+            <ul class="massages-area position-absolute" id="massages-area">
+              <div class="massages-header">
+                <h6 style="font-size: 13px" class="alert alert-primary fw-bold">
+                  أحدث الرسائل
+                </h6>
+              </div>
+              <li>
+                <!-- 1 -->
+
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 6.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      مريم ياسر
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        1
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 2.png"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      خالد عمر
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        4
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 5.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      ريم صالح
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 4.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      هاجر علي
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        2
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <h6
+                class="fw-bold text-center text-danger"
+                style="font-size: 11px"
+              >
+                كافة الرسائل
+                <i class="fa-solid fa-arrow-left mt-1"></i>
+              </h6>
+            </ul>
+          </div>
+
+          <div class="avatar">
+            <img
+              src="./images/profile new.png"
+              alt="avatar"
+              class="rounded-circle"
+              width="40"
+              height="40"
+            />
+          </div>
+          <a
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            class="text-primary"
+          >
+            <i class="fa-solid fa-bars-staggered fa-lg active-users"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <div class="profile">
+          <img width="55rem" src="./images/profile new.png" alt="profile" />
+          <h1 class="fw-bold fs-4 mt-3">ندى أكتلاتي</h1>
+        </div>
+
+        <ul class="ul-sidebar" style="list-style: none">
+          <li class="mb-2 active">
+            <i class="fa-solid fa-house fs-5"></i>
+            <a class="ms-1" href="./İndex.html"> الصفحة الرئيسية </a>
+          </li>
+          <li class="mb-2 item">
+            <i class="fa-solid fa-users"></i>
+            <a class="ms-1" href="#"> إدارة المستخدمين</a>
+            <ul class="submenu">
+              <li>
+                <a href="./student.html">الطلاب</a>
+              </li>
+              <li><a href="./Teachers.html"> إدارة المعلمين </a></li>
+              <li>
+                <a href="./Supervisors.html"> المشرفون</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-layer-group"></i>
+            <a class="ms-1" href="#"> إدارة المحتوى</a>
+            <ul class="submenu">
+              <li><a href="./Courses.html">الدورات / المواد</a></li>
+
+              <li><a href="./Episodes.html">الحلقات</a></li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-list-check"></i>
+            <a class="ms-1" href="#"> التسجيل والمتابعة</a>
+            <ul class="submenu">
+              <li><a href="student.html">سجل الطلاب</a></li>
+
+              <li><a href="./Tests.html">التقييمات والاختبارات</a></li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-tools"></i>
+            <a class="ms-1" href="#"> الإعدادات</a>
+            <ul class="submenu">
+              <li><a href="./edit.html"> إعدادات المنصة</a></li>
+              <li><a href="./rol.html"> الصلاحيات والأدوار</a></li>
+              <li><a href="./profil.html"> الملف الشخصي</a></li>
+              <li class="logout"><a href="">تسجيل الخروج</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- content -->
+
+      <!--card-1  -->
+      <div class="content" style="margin-top: 10px" id="content">
+        <div class="container">
+          <div
+            class="glass d-flex flex-wrap align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge badge-soft px-3 py-2"
+                  ><i class="fa-solid fa-graduation-cap"></i> لوحة التحكم</span
+                >
+                <span class="badge badge-soft px-3 py-2"
+                  ><i class="fa-solid fa-shield-halved"></i> إدارة الطلاب
+                </span>
+              </div>
+              <h1 class="h3 fw-bold mb-1 text-light mt-3">إدارة الطلاب :</h1>
+              <p class="mb-0 muted text-light fw-bolder mt-2">
+                من هنا تضيف الطلاب، تتابع تقدمهم، وتدير التسجيل والحضور.
+              </p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <span
+                class="btn btn-ghost"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasleft1"
+                aria-controls="offcanvasleft1"
+                ><i
+                  class="fa-solid fa-plus fa-xs me-2"
+                  style="color: rgb(255, 255, 255)"
+                ></i
+                >إضافة طالب جديد
+              </span>
+
+              <div class="dropdown">
+                <span
+                  class="btn btn-ghost dropdown-toggle text-light"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i
+                    class="fa-solid fa-download fa-sm"
+                    style="color: rgb(255, 255, 255)"
+                  ></i>
+                  تصدير
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" style="color: #032263" href="#">
+                      <i class="fa-solid fa-file-excel fa-sm me-2"></i>Excel</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" style="color: #032263" href="#">
+                      <i class="fa-solid fa-file-pdf fa-sm me-2"></i>pdf</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" style="color: #032263" href="#">
+                      <i class="fa-solid fa-print fa-sm me-2"></i> طباعة</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <div
+                class="card text-left d-flex align-items-center btn-ghost-card mt-5"
+              >
+                <i
+                  class="fa-solid fa-users fa-2xl mt-5 mb-2"
+                  style="color: rgba(116, 192, 252, 1)"
+                ></i>
+                <div class="card-body text-center">
+                  <h4 class="card-title">إجمالي الطلاب</h4>
+                  <h2 class="counter" data-target="1120">0</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <div
+                class="card text-left d-flex align-items-center btn-ghost-card mt-5"
+              >
+                <i
+                  class="fa-solid fa-chart-line fa-2xl mt-5 mb-2"
+                  style="color: rgba(5, 255, 17, 0.388)"
+                ></i>
+
+                <div class="card-body text-center">
+                  <h4 class="card-title">المعدل الأكاديمي العام</h4>
+                  <h2 class="">90%</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <div
+                class="card text-left d-flex align-items-center btn-ghost-card mt-5"
+              >
+                <i
+                  class="fa-solid fa-triangle-exclamation fa-2xl mt-5 mb-2"
+                  style="color: rgb(205, 13, 41)"
+                ></i>
+                <div class="card-body text-center">
+                  <h4 class="card-title">الطلاب تحت المتابعة</h4>
+                  <h2 class="counter" data-target="97">0</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <div
+                class="card text-left d-flex align-items-center btn-ghost-card mt-5"
+              >
+                <i
+                  class="fa-solid fa-users fa-2xl mt-5 mb-2"
+                  style="color: rgb(233, 215, 15)"
+                ></i>
+                <div class="card-body text-center">
+                  <h4 class="card-title">نسبة الحضور العامة</h4>
+                  <h2 class="">89%</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Offcanvas  supervisor -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasleft1"
+        >
+          <div class="offcanvas-header" style="margin-top: 60px">
+            <h5 class="offcanvas-title text-light">إضافة طالب جديد</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Body -->
+            <div class="modal-body px-4 pb-1">
+              <!-- معلومات أساسية -->
+              <div class="mb-3">
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >اسم الطالب</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="أدخل الاسم بالكامل"
+                    />
+                  </div>
+
+                  <div class="col-6 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >الجنس</label
+                    >
+
+                    <select class="form-select">
+                      <option selected>اختر</option>
+                      <option>ذكر</option>
+                      <option>أنثى</option>
+                    </select>
+                  </div>
+
+                  <div class="col-6 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >تاريخ الميلاد</label
+                    >
+                    <input type="date" class="form-control" />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >المستوى</label
+                    >
+                    <select class="form-select">
+                      <option selected>اختر المستوى</option>
+                      <option>تأسيس</option>
+                      <option>مبتدئ</option>
+                      <option>متوسط</option>
+                      <option>متقدم</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >المادة</label
+                    >
+                    <select class="form-select">
+                      <option selected>اختر المادة</option>
+                      <option>قرآن</option>
+                      <option>تجويد</option>
+                      <option>فقه</option>
+                      <option>عقيدة</option>
+                      <option>لغة عربية</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >الحالة</label
+                    >
+                    <select class="form-select">
+                      <option selected>جديد</option>
+                      <option>نشط</option>
+                      <option>غير نشط</option>
+                      <option>قيد المراجعة</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="fw-bold mb-2 text-light">
+                  <i class="fa-solid fa-phone me-1"></i> معلومات التواصل
+                  (اختياري)
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >اسم ولي الأمر</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="أدخل الاسم بالكامل "
+                    />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >هاتف ولي الأمر</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="+90 5xx xxx xx xx"
+                    />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >بريد (اختياري)</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="student@edu-platform.com"
+                    />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label small"
+                      style="color: rgba(255, 255, 255, 0.8)"
+                      >المعلم</label
+                    >
+                    <select class="form-select">
+                      <option selected>اختر المعلم</option>
+                      <option>مريم الزهراء</option>
+                      <option>يحيى القاسم</option>
+                      <option>أنس الحكيم</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ملاحظات -->
+              <div class="mb-2">
+                <div class="fw-bold mb-2 text-light">
+                  <i class="fa-regular fa-note-sticky me-1 text-light"></i>
+                  ملاحظات (اختياري)
+                </div>
+                <textarea
+                  rows="3"
+                  class="form-control"
+                  placeholder="مثال: يحتاج متابعة بالنطق / مستوى القراءة متوسط..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer border-0 px-4 pb-4 gap-2">
+              <button
+                type="button"
+                class="btn btn-ghost soft"
+                data-bs-dismiss="offcanvas"
+              >
+                إلغاء
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-ghost soft"
+                data-bs-dismiss="offcanvas"
+              >
+                حفظ
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-5">
+          <section class="section-students p-0">
+            <!-- Header -->
+            <div class="section-students-header">
+              <div>
+                <h5 class="fw-bold mb-2">
+                  <i class="fa-solid fa-users me-2"></i>
+                  لوحة التحكم الشاملة للطلاب
+                </h5>
+                <p class="mt-2">
+                  تمثل هذه الصفحة المرجع المركزي لإدارة بيانات الطلاب، وتوفر
+                  مؤشرات تساعد على تقييم الأداء وضمان جودة المتابعة.
+                </p>
+              </div>
+            </div>
+
+            <!-- ✅ Mobile View (Cards) -->
+            <div class="p-3 d-block d-md-none">
+              <div class="row g-3">
+                <!-- Card 1 -->
+                <div class="col-12">
+                  <div class="student-card">
+                    <div
+                      class="d-flex justify-content-between align-items-start gap-2 flex-wrap"
+                    >
+                      <div>
+                        <div class="fw-bold fs-6">أحمد محمد علي</div>
+                        <div class="meta mt-1">
+                          <i class="fa-regular fa-envelope me-1"></i>
+                          ahmad.quran@email.com
+                        </div>
+                      </div>
+                      <div class="chip">
+                        <span
+                          class="spinner-grow text-success me-1"
+                          style="width: 10px; height: 10px"
+                        ></span>
+                        نشط
+                      </div>
+                    </div>
+
+                    <hr class="border-light border-opacity-25 my-3" />
+
+                    <div class="d-flex flex-column gap-2">
+                      <div class="d-flex justify-content-between">
+                        <span class="opacity-75">الدورة</span>
+                        <span class="fw-semibold">دورة حفظ جزء عمّ</span>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="opacity-75">تاريخ التسجيل</span>
+                        <span class="fw-semibold">10/02/2025</span>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="opacity-75">التقدم</span>
+                        <span class="fw-semibold">80%</span>
+                      </div>
+                    </div>
+
+                    <div class="actions-wrap mt-3">
+                      <a href="#" class="btn btn-primary btn-sm px-3">تعديل</a>
+                      <a href="#" class="btn btn-success btn-sm px-3"
+                        >التفاصيل</a
+                      >
+                      <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12">
+                  <div class="student-card">
+                    <div
+                      class="d-flex justify-content-between align-items-start gap-2 flex-wrap"
+                    >
+                      <div>
+                        <div class="fw-bold fs-6">فاطمة خالد</div>
+                        <div class="meta mt-1">
+                          <i class="fa-regular fa-envelope me-1"></i>
+                          fatima.islam@email.com
+                        </div>
+                      </div>
+                      <div class="chip">
+                        <span
+                          class="spinner-grow text-primary me-1"
+                          style="width: 10px; height: 10px"
+                        ></span>
+                        مكتمل
+                      </div>
+                    </div>
+
+                    <hr class="border-light border-opacity-25 my-3" />
+
+                    <div class="d-flex flex-column gap-2">
+                      <div class="d-flex justify-content-between">
+                        <span class="opacity-75">الدورة</span>
+                        <span class="fw-semibold"
+                          >أساسيات التلاوة والتجويد</span
+                        >
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="opacity-75">تاريخ التسجيل</span>
+                        <span class="fw-semibold">05/02/2026</span>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="opacity-75">التقدم</span>
+                        <span class="fw-semibold">80%</span>
+                      </div>
+                    </div>
+
+                    <div class="actions-wrap mt-3">
+                      <a href="#" class="btn btn-primary btn-sm px-3">تعديل</a>
+                      <a href="#" class="btn btn-success btn-sm px-3"
+                        >التفاصيل</a
+                      >
+                      <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-responsive d-none d-md-block">
+              <table
+                class="table table-navy-glass text-center align-middle mb-0"
+              >
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>اسم الطالب</th>
+                    <th class="d-none d-lg-table-cell">البريد الإلكتروني</th>
+                    <th>الدورة</th>
+                    <th class="d-none d-lg-table-cell">تاريخ التسجيل</th>
+                    <th>التقدم</th>
+                    <th>الحالة</th>
+                    <th>إجراءات</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td class="text-nowrap">أحمد محمد علي</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">ahmad.quran@email.com</span>
+                    </td>
+                    <td><span class="truncate">دورة حفظ جزء عمّ</span></td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      10/02/2025
+                    </td>
+                    <td class="text-nowrap">80%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-success me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      نشط
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>2</th>
+                    <td class="text-nowrap">مريم أحمد</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">mariam.arabic@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate"> قواعد اللغة العربية</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      10/07/2024
+                    </td>
+                    <td class="text-nowrap">40%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-warning me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      جديد
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>3</th>
+                    <td class="text-nowrap">عمر حسن</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">omar.quran@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate"> دورة تفسير جزء تبارك</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      05/02/2026
+                    </td>
+                    <td class="text-nowrap">100%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-success me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      نشط
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>4</th>
+                    <td class="text-nowrap">زينب علي</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">zainab.edu@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate"> التربية الإسلامية</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      19/05/2024
+                    </td>
+                    <td class="text-nowrap">70%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-primary me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      مكتمل
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>5</th>
+                    <td class="text-nowrap">فاطمة خالد</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">fatima.islam@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate">أساسيات التلاوة والتجويد</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      05/02/2026
+                    </td>
+                    <td class="text-nowrap">80%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-primary me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      مكتمل
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>6</th>
+                    <td class="text-nowrap">عبد الله سعيد</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">abdullah.quran@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate"> سورة البقرة</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      10/02/2026
+                    </td>
+                    <td class="text-nowrap">60%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-success me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      نشط
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>7</th>
+                    <td class="text-nowrap">نور محمد</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">nour.sira@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate"> أخلاق النبي ﷺ</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      14/02/2026
+                    </td>
+                    <td class="text-nowrap">100%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-primary me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      مكتمل
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>8</th>
+                    <td class="text-nowrap">خالد ياسر</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">khaled.edu@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate"> مخارج الحروف</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      10/02/2026
+                    </td>
+                    <td class="text-nowrap">40%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-warning me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      جديد
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>9</th>
+                    <td class="text-nowrap">آية عبد الكريم</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">aya.arabic@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate">البلاغة العربية</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      05/02/2026
+                    </td>
+                    <td class="text-nowrap">50%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-success me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      نشط
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>10</th>
+                    <td class="text-nowrap">يوسف عبد الرحمن</td>
+                    <td class="d-none d-lg-table-cell">
+                      <span class="truncate">yousef.sira@email.com</span>
+                    </td>
+                    <td>
+                      <span class="truncate">السيرة النبوية</span>
+                    </td>
+                    <td class="d-none d-lg-table-cell text-nowrap">
+                      05/02/2026
+                    </td>
+                    <td class="text-nowrap">60%</td>
+                    <td class="text-nowrap">
+                      <span
+                        class="spinner-grow text-success me-1"
+                        style="width: 12px; height: 12px"
+                      ></span>
+                      نشط
+                    </td>
+                    <td>
+                      <div class="actions-wrap">
+                        <a href="#" class="btn btn-primary btn-sm px-3"
+                          >تعديل</a
+                        >
+                        <a href="#" class="btn btn-success btn-sm px-3"
+                          >التفاصيل</a
+                        >
+                        <a href="#" class="btn btn-danger btn-sm px-3">حذف</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="p-3">
+              <ul
+                class="pagination mt-4 mb-2 d-flex justify-content-between w-100"
+              >
+                <li class="page-item">
+                  <a class="page-link btn-brand-pagination" href="#">السابق</a>
+                </li>
+
+                <div class="d-flex flex-wrap justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination active" href="#"
+                      >1</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">4</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">5</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">6</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">7</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">8</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">9</a>
+                  </li>
+
+                  <li class="page-item">
+                    <a class="page-link btn-brand-pagination" href="#">....</a>
+                  </li>
+                </div>
+
+                <li class="page-item">
+                  <a class="page-link btn-brand-pagination" href="#">التالي</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+
+        <!-- users online  -->
+        <div
+          class="offcanvas offcanvas-end"
+          style="background-color: #cccccc; --bs-offcanvas-width: 270px"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+          </div>
+          <div class="offcanvas-body">
+            <!-- 1 -->
+            <div class="alert alert-success mt-3">كافة المستخدمين النشطون</div>
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 1.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  يوسف حسن
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 8.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  هبة الله ثابت
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 3.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  خالد أحمد
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 4.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  هاجر علي
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 2.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  خالد عمر
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 5.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  ريم صالح
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 6.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  مريم ياسر
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <!-- Top -->
+          <div class="footer-top">
+            <div class="container">
+              <div class="row g-4">
+                <!-- About -->
+                <div class="col-md-4">
+                  <h5 class="footer-title">منصة غاية</h5>
+                  <p class="footer-desc">
+                    منصة تعليمية متخصصة في تعليم اللغة العربية والقرآن الكريم
+                    وتأهيل الكوادر التعليمية بأفضل الأساليب الحديثة.
+                  </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-2">
+                  <h5 class="footer-title">روابط سريعة</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">الدورات</a></li>
+                    <li><a href="#">المعلمين</a></li>
+                    <li><a href="#">التقارير</a></li>
+                    <li><a href="#">الدعم الفني</a></li>
+                  </ul>
+                </div>
+
+                <!-- Programs -->
+                <div class="col-md-3">
+                  <h5 class="footer-title">برامجنا</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">تعليم القرآن الكريم</a></li>
+                    <li><a href="#">اللغة العربية</a></li>
+                    <li><a href="#">إعداد المعلمين</a></li>
+                    <li><a href="#">الدورات المكثفة</a></li>
+                    <li><a href="#">برامج الأطفال</a></li>
+                  </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3">
+                  <h5 class="footer-title">تواصل معنا</h5>
+                  <ul class="footer-links">
+                    <li>📧 info@gaya.com</li>
+                    <li>📞 +90 555 123 4567</li>
+                    <li>📍 تركيا – إسطنبول</li>
+                  </ul>
+
+                  <div class="footer-social mt-3">
+                    <a href="#">🌐</a>
+                    <a href="#">📘</a>
+                    <a href="#">📺</a>
+                    <a href="#">💬</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom -->
+          <div class="footer-bottom">
+            <div
+              class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+            >
+              <div>© 2026 جميع الحقوق محفوظة — منصة غاية</div>
+
+              <div>تصميم وتطوير ❤️ فريق المنصة</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="./javascript/datatables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./javascript/charts.js"></script>
+    <script src="./javascript/bootstrap.js"></script>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

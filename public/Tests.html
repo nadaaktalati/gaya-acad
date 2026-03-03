@@ -1,0 +1,1845 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashbord</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+        }, 1000);
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div class="" id="loader">
+      <img
+        src="./images/Dual Ball@1x-1.0s-209px-209px.gif"
+        width="70px"
+        alt=""
+      />
+    </div>
+
+    <div class="main-wrapper">
+      <header
+        class="header d-flex justify-content-between align-items-center py-2 px-3 flex-nowrap fixed-top"
+      >
+        <!-- القسم الأيمن -->
+        <div class="d-flex align-items-center gap-2 flex-nowrap">
+          <!-- أيقونة الشعار -->
+          <a href="#">
+            <i class="fa-solid fa-chart-bar fa-lg" id="sidebar-toggle"></i>
+          </a>
+          <!-- الشعار يختفي على الشاشات الصغيرة -->
+          <a class="text-decoration-none d-none d-sm-inline logo" href="/">
+            لوحة تحكم منصة غاية
+          </a>
+
+          <a
+            href="#"
+            class="d-lg-none"
+            id="search-toggle "
+            style="color: #032263"
+          >
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </a>
+
+          <form
+            action=""
+            class="d-none d-lg-flex flex-grow-1 my-0"
+            id="search-form"
+          >
+            <input
+              type="text "
+              placeholder="اكتب كلمة البحث"
+              class="form-control w-100 ms-4"
+            />
+          </form>
+        </div>
+
+        <!-- القسم الأيسر -->
+        <div class="d-flex align-items-center gap-2 flex-nowrap">
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-calendar-days fa-lg"></i
+          ></a>
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-comment-dots fa-lg"></i
+          ></a>
+          <a style="color: #032263" href="#"
+            ><i class="fa-regular fa-bell fa-lg"></i
+          ></a>
+
+          <div
+            class="massages-containe position-relative"
+            id="massages-containe"
+            style="color: #032263"
+          >
+            <i class="fa-regular fa-envelope fa-lg">
+              <span
+                class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                style="font-size: 10px"
+              >
+                16
+              </span></i
+            >
+            <ul class="massages-area position-absolute" id="massages-area">
+              <div class="massages-header">
+                <h6 style="font-size: 13px" class="alert alert-primary fw-bold">
+                  أحدث الرسائل
+                </h6>
+              </div>
+              <li>
+                <!-- 1 -->
+
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 6.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      مريم ياسر
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        1
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 2.png"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      خالد عمر
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        4
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 5.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      ريم صالح
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="item-side-menu d-flex justify-content-between p-1 mb-2"
+                  style="
+                    background-color: rgba(236, 234, 230, 0.9);
+                    border-radius: 4px;
+                    height: 50px;
+                    border-bottom: #032263 2px solid;
+                  "
+                >
+                  <div class="avatar-info d-flex position-relative">
+                    <img
+                      width="40px"
+                      src="./images/profile 4.jpeg"
+                      style="border: #032263 2px solid; border-radius: 50px"
+                      alt=""
+                    />
+                    <h5
+                      class="fw-bold align-items-center d-flex ms-2 mt-1"
+                      style="font-size: 16px"
+                    >
+                      هاجر علي
+                    </h5>
+                  </div>
+                  <div class="contact-info d-flex align-items-center">
+                    <div
+                      class="position-relative d-inline-block me-2"
+                      style="font-size: 14px"
+                    >
+                      <i
+                        class="fa-solid fa-comments fa-lg"
+                        style="color: #032263"
+                      ></i>
+
+                      <span
+                        class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger"
+                      >
+                        2
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <h6
+                class="fw-bold text-center text-danger"
+                style="font-size: 11px"
+              >
+                كافة الرسائل
+                <i class="fa-solid fa-arrow-left mt-1"></i>
+              </h6>
+            </ul>
+          </div>
+
+          <div class="avatar">
+            <img
+              src="./images/profile new.png"
+              alt="avatar"
+              class="rounded-circle"
+              width="40"
+              height="40"
+            />
+          </div>
+          <a
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            class="text-primary"
+          >
+            <i class="fa-solid fa-bars-staggered fa-lg active-users"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <div class="profile">
+          <img width="55rem" src="./images/profile new.png" alt="profile" />
+          <h1 class="fw-bold fs-4 mt-3">ندى أكتلاتي</h1>
+        </div>
+
+        <ul class="ul-sidebar" style="list-style: none">
+          <li class="mb-2 active">
+            <i class="fa-solid fa-house fs-5"></i>
+            <a class="ms-1" href="./İndex.html"> الصفحة الرئيسية </a>
+          </li>
+          <li class="mb-2 item">
+            <i class="fa-solid fa-users"></i>
+            <a class="ms-1" href="#"> إدارة المستخدمين</a>
+            <ul class="submenu">
+              <li>
+                <a href="./student.html">الطلاب</a>
+              </li>
+              <li><a href="./Teachers.html"> إدارة المعلمين </a></li>
+              <li>
+                <a href="./Supervisors.html"> المشرفون</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-layer-group"></i>
+            <a class="ms-1" href="#"> إدارة المحتوى</a>
+            <ul class="submenu">
+              <li><a href="./Courses.html">الدورات / المواد</a></li>
+
+              <li><a href="./Episodes.html">الحلقات</a></li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-list-check"></i>
+            <a class="ms-1" href="#"> التسجيل والمتابعة</a>
+            <ul class="submenu">
+              <li><a href="student.html">سجل الطلاب</a></li>
+
+              <li><a href="./Tests.html">التقييمات والاختبارات</a></li>
+            </ul>
+          </li>
+
+          <li class="mb-2 item">
+            <i class="fa-solid fa-tools"></i>
+            <a class="ms-1" href="#"> الإعدادات</a>
+            <ul class="submenu">
+              <li><a href="./edit.html"> إعدادات المنصة</a></li>
+              <li><a href="./rol.html"> الصلاحيات والأدوار</a></li>
+              <li><a href="./profil.html"> الملف الشخصي</a></li>
+              <li class="logout"><a href="">تسجيل الخروج</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- content -->
+
+      <!--card-1  -->
+      <div class="content" id="content">
+        <div class="container">
+          <!-- Offcanvas  supervisor -->
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasleft1"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-light">إضافة اختبار جديدة</h5>
+
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="modal-body">
+                <div class="row d-inline-flex">
+                  <div class="row g-2">
+                    <div class="col-12 col-md-6">
+                      <label class="form-label text-light"> اسم الحلقة</label>
+                      <input
+                        class="form-control"
+                        placeholder="أدخل  اسم الإختبار "
+                      />
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <label class="form-label text-light">المادة</label>
+                      <select class="form-select pe-5">
+                        <option style="color: #032263">اختر</option>
+
+                        <option style="color: #032263">قرآن كريم</option>
+                        <option style="color: #032263">لغة عربية</option>
+                        <option style="color: #032263">تربية اسلامية</option>
+                        <option style="color: #032263">الفقه</option>
+                        <option style="color: #032263">العقيدة</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <label class="form-label text-light">المستوى </label>
+                      <div class="position-relative">
+                        <select class="form-select pe-5">
+                          <option style="color: #032263">اختر</option>
+                          <option style="color: #032263">تأسيس</option>
+                          <option style="color: #032263">مبتدئ</option>
+                          <option style="color: #032263">متوسط</option>
+                          <option style="color: #032263">متقدم</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label text-light">الحالة</label>
+                      <select class="form-select">
+                        <option>اختر</option>
+                        <option>قيد التحضير</option>
+                        <option>نشطة</option>
+                        <option>تبدأ قريباَ</option>
+
+                        <option>متوقفة</option>
+
+                        <option>مكتملة</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <label class="form-label text-light">اليوم</label>
+                      <select class="form-select">
+                        <option>اختر</option>
+                        <option>السبت</option>
+                        <option>الأحد</option>
+                        <option>الإثنين</option>
+                        <option>الثلاثاء</option>
+                        <option>الأربعاء</option>
+                        <option>الخميس</option>
+                        <option>الجمعة</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <label class="form-label text-light">
+                        عدد أسئلة الإختبار
+                      </label>
+                      <input
+                        class="form-control"
+                        placeholder="أدخل  عدد أسئلة الإختبار "
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label text-light">
+                        ملاحظات عن الاختبار (اختياري)</label
+                      >
+                      <textarea
+                        class="form-control"
+                        rows="3"
+                        placeholder=" (ملاحظات عن الإختبار.....)"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer border-white-25 mt-3 gap-2">
+                <button
+                  class="btn btn-ghost"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <i class="bi bi-x-lg ms-1"></i> إلغاء
+                </button>
+                <button
+                  class="btn btn-brand"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <i class="bi bi-check2-circle ms-1"></i> حفظ
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--card-1  -->
+          <div class="content" id="content">
+            <div class="inner-content">
+              <div class="container">
+                <div
+                  class="glass d-flex flex-wrap align-items-center justify-content-between gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <span class="badge badge-soft px-3 py-2 tex"
+                        ><i class="fa-solid fa-graduation-cap"></i> لوحة
+                        التحكم</span
+                      >
+
+                      <span class="badge badge-soft px-3 py-2">
+                        <i class="fa-solid fa-pen-to-square me-2"></i> التقييمات
+                        والاختبارات
+                      </span>
+                    </div>
+                    <h1 class="h3 fw-bold mb-1 text-light mt-3">
+                      التقييمات والاختبارات :
+                    </h1>
+                    <p class="mb-0 muted text-light fw-bolder mt-2">
+                      أنشئ الاختبارات، راقب التصحيح، واضبط الإعدادات — بشكل واضح
+                      وبسيط.
+                    </p>
+
+                    <span class="badge badge-soft px-2 py-2 me-1 mt-2">
+                      <i class="fa-solid fa-list-check me-1"></i>
+                      40 اختبار
+                    </span>
+
+                    <span class="badge badge-soft px-2 py-2 me-1 mt-2">
+                      <i class="fa-solid fa-circle-check text-success me-1"></i>
+                      29 تم التصحيح
+                    </span>
+
+                    <span class="badge badge-soft px-2 py-2 mt-2">
+                      <i class="fa-solid fa-clock text-warning me-1"></i>
+                      11 بانتظار التصحيح
+                    </span>
+                  </div>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <span
+                      class="btn btn-ghost"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasleft1"
+                      aria-controls="offcanvasleft1"
+                      ><i
+                        class="fa-solid fa-plus fa-xs me-2"
+                        style="color: rgb(255, 255, 255)"
+                      ></i
+                      >إضافة اختبار
+                    </span>
+                    <div class="dropdown">
+                      <span
+                        class="btn btn-ghost dropdown-toggle text-light"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i
+                          class="fa-solid fa-download fa-sm"
+                          style="color: rgb(255, 255, 255)"
+                        ></i>
+                        تصدير
+                      </span>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            style="color: #032263"
+                            href="#"
+                          >
+                            <i class="fa-solid fa-file-excel fa-sm me-2"></i
+                            >Excel</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            style="color: #032263"
+                            href="#"
+                          >
+                            <i class="fa-solid fa-file-pdf fa-sm me-2"></i
+                            >pdf</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            style="color: #032263"
+                            href="#"
+                          >
+                            <i class="fa-solid fa-print fa-sm me-2"></i>
+                            طباعة</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="row mt-4">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-3">
+                    <input
+                      type="search"
+                      class="form-control btn-ghost search-icon"
+                      placeholder=" ابحث باسم الاختبار  ..... "
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-3">
+                    <div class="position-relative">
+                      <select
+                        class="form-select select pe-5"
+                        style="color: rgba(255, 255, 255, 0.7)"
+                      >
+                        <option style="color: #032263">المادة</option>
+                        <option style="color: #032263">قرآن كريم</option>
+                        <option style="color: #032263">لغة عربية</option>
+                        <option style="color: #032263">تربية اسلامية</option>
+                        <option style="color: #032263">الفقه</option>
+                        <option style="color: #032263">العقيدة</option>
+                      </select>
+                      <i class="fa-solid fa-angle-down select-icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-3">
+                    <div class="position-relative">
+                      <select
+                        class="form-select select pe-5"
+                        style="color: rgba(255, 255, 255, 0.7)"
+                      >
+                        <option style="color: #032263">النوع</option>
+                        <option style="color: #032263">اختيار من متعدد</option>
+                        <option style="color: #032263">صح/خطأ</option>
+                        <option style="color: #032263">مقالي</option>
+                        <option style="color: #032263">شفهي</option>
+                        <option style="color: #032263">مختلط</option>
+                      </select>
+                      <i class="fa-solid fa-angle-down select-icon"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-3">
+                    <div class="position-relative">
+                      <select
+                        class="form-select select pe-5"
+                        style="color: rgba(255, 255, 255, 0.7)"
+                      >
+                        <option style="color: #032263">الحالة</option>
+                        <option style="color: #032263">منشور</option>
+                        <option style="color: #032263">مجدول</option>
+                        <option style="color: #032263">مسودة</option>
+                        <option style="color: #032263">مغلق</option>
+                      </select>
+                      <i class="fa-solid fa-angle-down select-icon"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-3">
+                    <button
+                      class="select pe-3 ps-3 gap-3"
+                      style="
+                        border-radius: 5px;
+                        padding: 5px;
+                        color: rgba(255, 255, 255, 0.7);
+                      "
+                    >
+                      <i
+                        class="fa-solid fa-arrows-rotate fa-sm me-1"
+                        style="color: rgba(255, 255, 255, 0.7)"
+                      ></i>
+                      تحديث
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-5 ">
+                <h4 class="fw-bold text-light">اختبارات التربية الإسلامية</h4>
+              </div>
+              <div class="row gap-">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">
+                            اختبار أذكار المسلم
+                          </h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge bg-warning"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            بانتظار التصحيح
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : اليوم
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        اختبار لقياس حفظ الطالب وفهمه لأذكار المسلم اليومية.
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book-quran pe-3"></i
+                        >التجويد</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>10 دقائق</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>7
+                        أسئلة</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">نور العقيدة</h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge bg-success"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            تم التصحيح
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : اليوم
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        اختبار تأسيسي مبسّط يقيس فهم الطالب لأركان الإيمان
+                        ويُثبت معاني التوحيد بأسلوب سهل وتفاعلي.
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book-quran pe-3"></i
+                        >العقيدة</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>10 دقائق</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>15
+                        سؤال</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">
+                            على خطى النبي ﷺ
+                          </h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge text-bg-primary"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            مسودة
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : منذ يومين
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        اختبار تفاعلي في السيرة النبوية يقيس فهم الطالب لمواقف
+                        من حياة الرسول ﷺ والقيم والدروس المستفادة منها.
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book-quran pe-3"></i>السيرة
+                        النبوية</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>10 دقائق</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>7
+                        أسئلة</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="fw-bolder text-warning p-4"
+                  style="display: flex; justify-content: end"
+                >
+                  <span style="font-size: 15px">
+                    <a href="" class="text-warning"> استكشف المزيد </a>
+                  </span>
+                  <a href=""
+                    ><i
+                      class="fa-solid fa-arrow-left fa-sm p-2 text-warning"
+                      style="color: rgb(255, 255, 255)"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="row ">
+                <h4 class="fw-bold fs-4 text-light">اختبارات القرآن الكريم</h4>
+              </div>
+
+              <div class="row ">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">سورة البقرة</h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge bg-success"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            تم التصحيح
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : منذ 7 أيام
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        اختبار سورة البقرة يقيس حفظ الطالب وفهمه لمعاني الآيات
+                        وأبرز الأحكام والقيم الواردة في السورة.
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book-quran pe-3"></i>القرآن
+                        الكريم</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>20 دقيقة</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>15
+                        سؤال</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">سورة النور</h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge text-bg-primary"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            مسودة
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : منذ أسبوع
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        اختبار سورة النور يقيس فهم الطالب لمعاني الآيات وأحكام
+                        العفة والآداب الإسلامية والقيم التربوية الواردة في
+                        السورة.
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book-quran pe-3"></i>القرآن
+                        االكريم</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>10 دقائق</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>7
+                        أسئلة</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">
+                            سورة العنكبوت
+                          </h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge bg-warning"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            بانتظار التصحيح
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : اليوم
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        اختبار سورة العنكبوت يقيس فهم الطالب لمعاني الصبر
+                        والثبات على الإيمان وأبرز الدروس التربوية الواردة في
+                        السورة.
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book-quran pe-3"></i>القرآن
+                        الكريم</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>10 دقائق</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>7
+                        أسئلة</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="fw-bolder text-warning p-4"
+                  style="display: flex; justify-content: end"
+                >
+                  <span style="font-size: 15px">
+                    <a href="" class="text-warning"> استكشف المزيد </a>
+                  </span>
+                  <a href=""
+                    ><i
+                      class="fa-solid fa-arrow-left fa-sm p-2 text-warning"
+                      style="color: rgb(255, 255, 255)"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="row">
+                <h4 class="fw-bold text-light">اختبارات اللغة العربية</h4>
+              </div>
+
+              <div class="row  ">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">
+                            مهارات القراءة
+                          </h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge bg-warning"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            بانتظار التصحيح
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : منذ 3 أسابيع
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        قياس الطلاقة والفهم القرائي وتحليل النصوص بأسلوب مبسط
+                        وتفاعلي.
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book pe-3"></i>اللغة
+                        العربية</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>7 دقائق</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>10
+                        أسئلة</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">
+                            القواعد النحوية
+                          </h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge text-bg-primary"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            مسودة
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : اليوم
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        تعزيز فهم القواعد النحوية وتطبيقها في تكوين الجمل
+                        الصحيحة.
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book pe-3"></i>اللغة
+                        العربية</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>10 دقائق</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>9
+                        أسئلة</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-4">
+                  <div class="card text-left btn-ghost">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <div>
+                          <h4 class="card-title fw-bolder fs-5">
+                            التعبير الكتابي
+                          </h4>
+                        </div>
+                        <div>
+                          <span
+                            class="badge bg-warning"
+                            style="font-size: 10px"
+                          >
+                            <i
+                              class="fa-solid fa-hourglass-half fa-sm py-2 px-1 me-1"
+                            ></i>
+                            بانتظار التصحيح
+                          </span>
+                        </div>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="font-size: 13px; color: #cccccc95"
+                      >
+                        آخر تحديث : منذ 5 ساعات
+                      </p>
+                      <p class="fw-semibold line-1" style="font-size: 13px">
+                        تنمية قدرة الطالب على صياغة الأفكار وكتابة جمل وموضوعات
+                        قصيرة بلغة سليمة
+                      </p>
+                      <span
+                        class="btn-ghost p-1 fw-bold"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-book pe-3"></i>اللغة
+                        العربية</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-regular fa-clock pe-3"></i>15 دقيقة</span
+                      >
+                      <span
+                        class="btn-ghost p-1 fw-bold ms-1"
+                        style="font-size: 12px; border-radius: 10px"
+                        ><i class="fa-solid fa-list-check pe-3"></i>10
+                        أسئلة</span
+                      >
+                      <div
+                        class="d-flex justify-content-between align-items-end"
+                      >
+                        <button
+                          class="btn-ghost-card mt-4 p-1 w-100 fw-bold"
+                          style="background-color: #032263; border-radius: 25px"
+                        >
+                          عرض الإختبار
+                        </button>
+                        <button
+                          class="btn btn-ghost-card btn-sm ms-2 text-white"
+                          style="background-color: #032263; border-radius: 25px"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">عرض</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">تعديل</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item text-danger" href="#"
+                              >حذف</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="fw-bolder text-warning p-4"
+              style="display: flex; justify-content: end"
+            >
+              <span style="font-size: 15px">
+                <a href="" class="text-warning"> استكشف المزيد </a>
+              </span>
+              <a href=""
+                ><i
+                  class="fa-solid fa-arrow-left fa-sm p-2 text-warning"
+                  style="color: rgb(255, 255, 255)"
+                ></i
+              ></a>
+            </div>
+            <div
+              class="fw-bolder text-light mt-5"
+              style="display: flex; justify-content: center"
+            >
+              <span style="font-size: 15px; border-bottom: #fff solid 2px">
+                <a href="" class="text-light"> الذهاب لصفحة الاختبارات</a>
+              </span>
+              <a href="">
+                <i
+                  class="fa-solid fa-circle-arrow-left ps-2"
+                  style="color: rgb(255, 255, 255)"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- users online  -->
+        <div
+          class="offcanvas offcanvas-end"
+          style="background-color: #cccccc; --bs-offcanvas-width: 270px"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+          </div>
+          <div class="offcanvas-body">
+            <!-- 1 -->
+            <div class="alert alert-success mt-3">كافة المستخدمين النشطون</div>
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 1.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  يوسف حسن
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 8.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  هبة الله ثابت
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 3.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  خالد أحمد
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 4.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  هاجر علي
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 2.png"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  خالد عمر
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 5.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  ريم صالح
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div
+              class="item-side-menu d-flex justify-content-between p-2 mb-2"
+              style="
+                background-color: rgba(236, 234, 230, 0.9);
+                border-radius: 4px;
+                border-bottom: #032263 2px solid;
+              "
+            >
+              <div class="avatar-info d-flex position-relative">
+                <span
+                  class="spinner-grow text-success me-1 position-absolute top-0"
+                  style="width: 12px; height: 12px"
+                ></span>
+                <img
+                  width="50px"
+                  src="./images/profile 6.jpeg"
+                  style="border: #032263 2px solid; border-radius: 50px"
+                  alt=""
+                />
+                <h5
+                  class="fw-bold align-items-center d-flex ms-2 mt-1"
+                  style="font-size: 16px"
+                >
+                  مريم ياسر
+                </h5>
+              </div>
+              <div class="contact-info d-flex align-items-center">
+                <i class="fa-brands fa-whatsapp" style="color: #032263"></i>
+                <i
+                  class="fa-brands fa-facebook-messenger"
+                  style="color: #032263"
+                ></i>
+                <i class="fa-solid fa-envelope" style="color: #032263"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+
+        <footer class="site-footer">
+          <!-- Top -->
+          <div class="footer-top">
+            <div class="container">
+              <div class="row g-4">
+                <!-- About -->
+                <div class="col-md-4">
+                  <h5 class="footer-title">منصة غاية</h5>
+                  <p class="footer-desc">
+                    منصة تعليمية متخصصة في تعليم اللغة العربية والقرآن الكريم
+                    وتأهيل الكوادر التعليمية بأفضل الأساليب الحديثة.
+                  </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-2">
+                  <h5 class="footer-title">روابط سريعة</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">الدورات</a></li>
+                    <li><a href="#">المعلمين</a></li>
+                    <li><a href="#">التقارير</a></li>
+                    <li><a href="#">الدعم الفني</a></li>
+                  </ul>
+                </div>
+
+                <!-- Programs -->
+                <div class="col-md-3">
+                  <h5 class="footer-title">برامجنا</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">تعليم القرآن الكريم</a></li>
+                    <li><a href="#">اللغة العربية</a></li>
+                    <li><a href="#">إعداد المعلمين</a></li>
+                    <li><a href="#">الدورات المكثفة</a></li>
+                    <li><a href="#">برامج الأطفال</a></li>
+                  </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3">
+                  <h5 class="footer-title">تواصل معنا</h5>
+                  <ul class="footer-links">
+                    <li>📧 info@gaya.com</li>
+                    <li>📞 +90 555 123 4567</li>
+                    <li>📍 تركيا – إسطنبول</li>
+                  </ul>
+
+                  <div class="footer-social mt-3">
+                    <a href="#">🌐</a>
+                    <a href="#">📘</a>
+                    <a href="#">📺</a>
+                    <a href="#">💬</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom -->
+          <div class="footer-bottom">
+            <div
+              class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+            >
+              <div>© 2026 جميع الحقوق محفوظة — منصة غاية</div>
+
+              <div>تصميم وتطوير ❤️ فريق المنصة</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./javascript/charts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
